@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#2f4f4f">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Input EditText -->
+        <TextView
+            android:id="@+id/inputView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:cursorVisible="true"
+            android:focusable="true"
+            android:paddingTop="10dp"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:verticalScrollbarPosition="right" />
+
+        <!-- Output EditText -->
+        <TextView
+            android:id="@+id/outputView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:cursorVisible="true"
+            android:focusable="true"
+            android:padding="10dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:verticalScrollbarPosition="right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <android.widget.Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/cancelBtn"
+                android:background="@drawable/ripple_effect"
+                android:gravity="center"
+                android:text="C"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <android.widget.Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/sevenBtn"
+                android:layout_weight="1"
+                android:background="@drawable/ripple_effect"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <android.widget.Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/fourBtn"
+                android:background="@drawable/ripple_effect"
+                android:gravity="center"
+                android:text="4"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <android.widget.Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/oneBtn"
+                android:background="@drawable/ripple_effect"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <android.widget.Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/double_zeroBtn"
+                android:layout_weight="1"
+                android:background="@drawable/ripple_effect"
+                android:gravity="center"
+                android:text="00"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <android.widget.Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/modulusBtn"
+                android:background="@drawable/ripple_effect"
+                android:gravity="center"
+                android:text="%"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <android.widget.Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/eightBtn"
+                android:background="@drawable/ripple_effect"
+                android:gravity="center"
+                android:text="8"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <android.widget.Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/fiveBtn"
+                android:background="@drawable/ripple_effect"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <android.widget.Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/twoBtn"
+                android:background="@drawable/ripple_effect"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <android.widget.Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/ripple_effect"
+                android:gravity="center"
+                android:id="@+id/zeroBtn"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <android.widget.Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/backBtn"
+                android:background="@drawable/ripple_effect"
+                android:gravity="center"
+                android:text="."
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:drawableTop="@drawable/ic_baseline_backspace_24"
+                android:paddingTop="25dp"
+                />
+
+            <android.widget.Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/nineBtn"
+                android:background="@drawable/ripple_effect"
+                android:gravity="center"
+                android:text="9"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <android.widget.Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/sixBtn"
+                android:background="@drawable/ripple_effect"
+                android:gravity="center"
+                android:text="6"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <android.widget.Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/threeBtn"
+                android:background="@drawable/ripple_effect"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <android.widget.Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/decimalBtn"
+                android:background="@drawable/ripple_effect"
+                android:gravity="center"
+                android:text="."
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <android.widget.Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/divideBtn"
+                android:background="@drawable/ripple_effect"
+                android:gravity="center"
+                android:text="/"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <android.widget.Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/multiplyBtn"
+                android:background="@drawable/ripple_effect"
+                android:gravity="center"
+                android:text="*"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <android.widget.Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/minusBtn"
+                android:background="@drawable/ripple_effect"
+                android:gravity="center"
+                android:text="-"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <android.widget.Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/plusBtn"
+                android:background="@drawable/ripple_effect"
+                android:gravity="center"
+                android:text="+"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <android.widget.Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/equalToBtn"
+                android:background="@drawable/ripple_effect"
+                android:gravity="center"
+                android:text="="
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
